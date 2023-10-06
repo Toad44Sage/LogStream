@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор</title>
+    <link rel="icon" href="calculator.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="result-container">
+      <h2>История вычислений</h2>
+      <div class="result-history"></div>
+    </div>
+    <div class="calculator-container">
+      <div class="calculator">
+        <div class="body_calculator">
+          <div class="calculator_screen">
+            <input class="calculator_input" pattern="[0-9()+\\-*/]*" />
+          </div>
+          <div class="button_calculator">
+            <div class="calculator_block_number_button">
+              <button class="button_number" id="clear">C</button>
+              <button class="button_number">()</button>
+              <button class="button_number">7</button>
+              <button class="button_number">8</button>
+              <button class="button_number">9</button>
+              <button class="button_number">4</button>
+              <button class="button_number">5</button>
+              <button class="button_number">6</button>
+              <button class="button_number">1</button>
+              <button class="button_number">2</button>
+              <button class="button_number">3</button>
+              <button class="button_number" id="zero">0</button>
+              <button class="button_number">.</button>
+            </div>
+            <div class="calculator_block_operation_button">
+              <button class="button_operation">+</button>
+              <button class="button_operation">-</button>
+              <button class="button_operation">*</button>
+              <button class="button_operation">/</button>
+              <button class="button_operation">=</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
